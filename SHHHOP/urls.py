@@ -15,11 +15,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from posts.views import hello_view, now_date_view, goodbye_view
+from posts.views import hello_view, now_date_view, goodbye_view , google_view , youtube_view , whatsapp_view ,telegram_view , instagram_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('hello/', hello_view),
     path('now_date/', now_date_view),
-    path('goodbye/', goodbye_view)
+    path('goodbye/', goodbye_view),
+    path('google/' , google_view),
+    path('youtube/', youtube_view),
+    path('whatsapp/', whatsapp_view),
+    path('telegram' , telegram_view),
+    path('instagram/' , instagram_view)
 ]
